@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <conio.h>
 #include <math.h>
 
@@ -21,7 +21,7 @@ void main()
 	int tiket;
 	int num1 = 0;
 	int num2 = 0;
-	cout << "Ââåäèòå øåñòèçíà÷íûé íîìåð áèëåòà:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑˆÐµÑÑ‚Ð¸Ð·Ð½Ð°Ñ‡Ð½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€ Ð±Ð¸Ð»ÐµÑ‚Ð°:" << endl;
 	cin >> tiket;
 	int copy = tiket / 1000;
 	for (int i = 0; i < 3; i++)
@@ -31,8 +31,8 @@ void main()
 		num2 += copy % 10;
 		copy /= 10;
 	}
-	if (num1 == num2) cout << "Áèëåò ñ÷àñòëèâûé" << endl;
-	else cout << "Áèëåò îáû÷íûé" << endl;
+	if (num1 == num2) cout << "Ð‘Ð¸Ð»ÐµÑ‚ ÑÑ‡Ð°ÑÑ‚Ð»Ð¸Ð²Ñ‹Ð¹" << endl;
+	else cout << "Ð‘Ð¸Ð»ÐµÑ‚ Ð¾Ð±Ñ‹Ñ‡Ð½Ñ‹Ð¹" << endl;
 #endif lucky tiket
 
 #ifdef SHOOTER 
@@ -40,12 +40,12 @@ void main()
 	do
 	{
 		symbol = _getch();
-		if (symbol == 119) cout << "Âïåðåä" << endl;
-		else if (symbol == 115) cout << "Íàçàä" << endl;
-		else if (symbol == 97) cout << "Âëåâî" << endl;
-		else if (symbol == 100) cout << "Âïðàâî" << endl;
-		else if (symbol == 32) cout << "Ïðûæîê" << endl;
-		else if (symbol == 13) cout << "Îãîíü" << endl;
+		if (symbol == 119) cout << "Ð’Ð¿ÐµÑ€ÐµÐ´" << endl;
+		else if (symbol == 115) cout << "ÐÐ°Ð·Ð°Ð´" << endl;
+		else if (symbol == 97) cout << "Ð’Ð»ÐµÐ²Ð¾" << endl;
+		else if (symbol == 100) cout << "Ð’Ð¿Ñ€Ð°Ð²Ð¾" << endl;
+		else if (symbol == 32) cout << "ÐŸÑ€Ñ‹Ð¶Ð¾Ðº" << endl;
+		else if (symbol == 13) cout << "ÐžÐ³Ð¾Ð½ÑŒ" << endl;
 		else cout << "Error" << endl;
 
 	} while (symbol != 27);
@@ -54,10 +54,10 @@ void main()
 #ifdef FACTORIAL 
 	int number, res;
 	long long int resl = 1;
-	cout << "Ââåäèòå ÷èñëî:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" << endl;
 	cin >> number;
 	res = number;
-	if (number == 0) cout << "Ôàêòîðèàë = 1" << endl;
+	if (number == 0) cout << "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» = 1" << endl;
 	else
 	{
 		for (int i = 0; i < number; i++)
@@ -65,7 +65,7 @@ void main()
 			resl *= res;
 			res--;
 		}
-		cout << "Ôàêòîðèàë ÷èñëà ðàâåí:" << resl << endl;
+		cout << "Ð¤Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ñ‡Ð¸ÑÐ»Ð° Ñ€Ð°Ð²ÐµÐ½:" << resl << endl;
 	}
 #endif FACTORIAL 
 
@@ -73,12 +73,12 @@ void main()
 
 	int stepen, main;
 	long long int resl = 1;
-	cout << "Ââåäèòå ÷èñëî:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" << endl;
 	cin >> main;
-	cout << "Ââåäèòå ñòåïåíü ÷èñëà:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ Ñ‡Ð¸ÑÐ»Ð°:" << endl;
 	cin >> stepen;
 	for (int i = 0; i < stepen; i++) resl *= main;
-	cout << "Ðåçóëüòàò ðàâåí:" << resl << endl;
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ Ñ€Ð°Ð²ÐµÐ½:" << resl << endl;
 #endif STEPEN
 
 #ifdef ASCII
@@ -119,7 +119,7 @@ void main()
 #ifdef FibonacciQuarterly
 	int chislo;
 	int num = 1;
-	cout << "Ââåäèòå ÷èñëî:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" << endl;
 	cin >> chislo;
 	for (int resl = 0; resl < chislo;)
 	{
@@ -133,7 +133,7 @@ void main()
 	int chislo, end;
 	int num1 = 1;
 	int num2 = 0;
-	cout << "Ââåäèòå ÷èñëî:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾:" << endl;
 	cin >> chislo;
 	end = chislo/2;
 	for (int i = 0; i<end; i++)
@@ -148,7 +148,7 @@ void main()
 
 #ifdef SimpleNumber
 	int number;
-	cout << "Ââåäèòå ïðèäåë:" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ñ€Ð¸Ð´ÐµÐ»:" << endl;
 	cin >> number;
 	for (int i = 2; i <= number; ++i) 
 	{
